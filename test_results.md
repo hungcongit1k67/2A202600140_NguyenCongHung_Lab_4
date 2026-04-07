@@ -186,7 +186,8 @@ TravelBuddy đang suy nghĩ...
 
 [Trả lời trực tiếp]
 
-TravelBuddy: Mình chỉ hỗ trợ các nhu cầu liên quan đến du lịch. Nếu bạn có câu hỏi nào về chuyến đi, vé máy bay, khách sạn hay lịch trình, hãy cho mình biết nhé!  ```
+TravelBuddy: Mình chỉ hỗ trợ các nhu cầu liên quan đến du lịch. Nếu bạn có câu hỏi nào về chuyến đi, vé máy bay, khách sạn hay lịch trình, hãy cho mình biết nhé!
+```
 
 **Nhận xét**
 - Agent từ chối đúng phạm vi, không gọi tool.
