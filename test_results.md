@@ -37,12 +37,11 @@ TravelBuddy đang suy nghĩ...
 
 TravelBuddy: Chào bạn! Để mình có thể giúp bạn tốt hơn, bạn có thể cho mình biết một số thông tin như:
 
-1. Bạn muốn đi đâu? (Ví dụ: Đà Nẵng, Phú Quốc, Hà Nội, Hồ Chí Minh...)
-2. Thời gian dự kiến đi và về?
-3. Ngân sách cho chuyến đi là bao nhiêu?
-4. Bạn thích loại hình lưu trú nào? (khách sạn, homestay, resort...)
+1. Bạn muốn đi du lịch ở đâu (điểm đến)?
+2. Thời gian dự kiến đi (ngày và số đêm)?
+3. Ngân sách dự kiến cho chuyến đi?
 
-Mình sẽ giúp bạn lên kế hoạch cho chuyến đi!
+Mình sẽ giúp bạn lên kế hoạch cho chuyến đi thú vị!
 ```
 
 **Nhận xét**
@@ -69,14 +68,14 @@ TravelBuddy đang suy nghĩ...
 [Gọi tool: search_flights]({'origin': 'Hà Nội', 'destination': 'Đà Nẵng'})
 [Trả lời trực tiếp]
 
-TravelBuddy: Dưới đây là các chuyến bay từ Hà Nội đi Đà Nẵng:
+TravelBuddy: Dưới đây là danh sách các chuyến bay từ Hà Nội đến Đà Nẵng:
 
-1. **VietJet Air**: 08:30 - 09:50 | Phổ thông | 890.000đ
-2. **Bamboo Airways**: 11:00 - 12:20 | Phổ thông | 1.200.000đ
-3. **Vietnam Airlines**: 06:00 - 07:20 | Phổ thông | 1.450.000đ
-4. **Vietnam Airlines**: 14:00 - 15:20 | Thương gia | 2.800.000đ
+1. **VietJet Air** | 08:30 - 09:50 | Phổ thông | 890.000đ
+2. **Bamboo Airways** | 11:00 - 12:20 | Phổ thông | 1.200.000đ
+3. **Vietnam Airlines** | 06:00 - 07:20 | Phổ thông | 1.450.000đ
+4. **Vietnam Airlines** | 14:00 - 15:20 | Thương gia | 2.800.000đ
 
-Nếu bạn cần thêm thông tin hoặc muốn đặt vé, hãy cho mình biết nhé!
+Nếu bạn cần thêm thông tin về khách sạn hoặc ngân sách cho chuyến đi, hãy cho mình biết nhé!
 ```
 
 **Nhận xét**
@@ -105,28 +104,27 @@ TravelBuddy đang suy nghĩ...
 
 [Gọi tool: search_flights]({'origin': 'Hà Nội', 'destination': 'Phú Quốc'})
 [Gọi tool: search_hotels]({'city': 'Phú Quốc', 'max_price_per_night': 2500000})
+[Gọi tool: calculate_budget]({'total_budget': 5000000, 'expenses': 'vé_máy_bay:1100000,khách_sạn:1600000'})
 [Trả lời trực tiếp]
 
-TravelBuddy: Chuyến bay:
-1. VietJet Air | 16:00 - 18:15 | phổ thông | 1.100.000đ
-2. VietJet Air | 10:00 - 12:15 | phổ thông | 1.350.000đ
-3. Vietnam Airlines | 07:00 - 09:15 | phổ thông | 2.100.000đ
+TravelBuddy: Dưới đây là thông tin chuyến đi từ Hà Nội đến Phú Quốc cho bạn:
 
-Khách sạn:
-1. 9Station Hostel | 2 sao | Dương Đông | rating 4.5 | 200.000đ/đêm
-2. Sol by Meliá | 4 sao | Bãi Trường | rating 4.2 | 1.500.000đ/đêm
-3. Lahana Resort | 3 sao | Dương Đông | rating 4.0 | 800.000đ/đêm
+**Chuyến bay:**
+1. VietJet Air | 16:00 - 18:15 | Phổ thông | 1.100.000đ
 
-Chi phí dự tính:
-- Vé máy bay (VietJet Air, 16:00 - 18:15): 1.100.000đ
-- Khách sạn (9Station Hostel, 2 đêm): 400.000đ
-- Tổng chi phí: 1.500.000đ
+**Khách sạn:**
+1. **Sol by Meliá** | 4 sao | Bãi Trường | rating 4.2 | 1.500.000đ/đêm (2 đêm: 3.000.000đ)
+2. **Lahana Resort** | 3 sao | Dương Đông | rating 4.0 | 800.000đ/đêm (2 đêm: 1.600.000đ)
 
-Ngân sách còn lại: 5.000.000đ - 1.500.000đ = 3.500.000đ
+**Tổng chi phí ước tính:**
+- Vé máy bay: 1.100.000đ
+- Khách sạn (Lahana Resort): 1.600.000đ
+---
+**Tổng chi: 2.700.000đ**
+**Ngân sách: 5.000.000đ**
+**Còn lại: 2.300.000đ**
 
-Gợi ý thêm:
-- Bạn có thể chọn chuyến bay VietJet Air lúc 16:00 để tiết kiệm chi phí.
-- Nếu muốn trải nghiệm tốt hơn, có thể chọn Lahana Resort với giá 800.000đ/đêm.
+Bạn có thể chọn giữa hai khách sạn. Nếu cần thêm thông tin hoặc hỗ trợ đặt chỗ, hãy cho mình biết nhé!
 ```
 
 **Nhận xét**
@@ -154,13 +152,13 @@ TravelBuddy đang suy nghĩ...
 
 [Trả lời trực tiếp]
 
-TravelBuddy: Bạn có thể cho mình biết thêm thông tin về khách sạn mà bạn muốn đặt không? Cụ thể là:
+TravelBuddy: Mình cần thêm thông tin để giúp bạn tốt hơn. Bạn hãy cho mình biết:
 
-1. Thành phố bạn muốn đặt khách sạn?
-2. Ngân sách tối đa mỗi đêm là bao nhiêu?
-3. Số đêm bạn dự định lưu trú?
+1. Thành phố bạn muốn đặt khách sạn là gì?
+2. Ngân sách tối đa mỗi đêm bạn dự định chi là bao nhiêu?
+3. Bạn dự định ở bao nhiêu đêm?
 
-Mình sẽ giúp bạn tìm kiếm khách sạn phù hợp!
+Cảm ơn bạn!
 ```
 
 **Nhận xét**
@@ -186,120 +184,8 @@ TravelBuddy đang suy nghĩ...
 
 [Trả lời trực tiếp]
 
-TravelBuddy: Mình chỉ hỗ trợ các nhu cầu liên quan đến du lịch. Nếu bạn có câu hỏi nào về chuyến đi, vé máy bay, khách sạn hay lịch trình, hãy cho mình biết nhé!
+TravelBuddy: Mình chỉ hỗ trợ các nhu cầu liên quan đến du lịch. Nếu bạn cần thông tin về chuyến bay, khách sạn hay lập kế hoạch cho chuyến đi, hãy cho mình biết nhé!
 ```
 
 **Nhận xét**
 - Agent từ chối đúng phạm vi, không gọi tool.
-
----
-
-## Test 6 - Hotel Search With Budget Filter
-
-**Input**
-```text
-Tìm khách sạn ở Phú Quốc dưới 1 triệu một đêm
-```
-
-**Mục tiêu kiểm tra**
-- Agent gọi `search_hotels`.
-- Có lọc theo `max_price_per_night`.
-- Trả về danh sách khách sạn phù hợp.
-
-**Output thực tế**
-```text
-TravelBuddy đang suy nghĩ...
-
-[Gọi tool: search_hotels]({'city': 'Phú Quốc', 'max_price_per_night': 1000000})
-[Trả lời trực tiếp]
-
-TravelBuddy: Dưới đây là một số khách sạn ở Phú Quốc dưới 1 triệu đồng một đêm:
-
-1. **9Station Hostel**
-   - **Sao:** 2 sao
-   - **Khu vực:** Dương Đông
-   - **Giá:** 200.000đ/đêm
-   - **Rating:** 4.5
-
-2. **Lahana Resort**
-   - **Sao:** 3 sao
-   - **Khu vực:** Dương Đông
-   - **Giá:** 800.000đ/đêm
-   - **Rating:** 4.0
-
-Nếu bạn cần thêm thông tin hoặc hỗ trợ gì khác, hãy cho mình biết nhé!
-```
-
-**Nhận xét**
-- Danh sách đúng, có mức giá phù hợp.
-
----
-
-## Test 7 - Budget Calculation
-
-**Input**
-```text
-Tính giúp tôi ngân sách 5 triệu, gồm vé máy bay 890000 và khách sạn 650000
-```
-
-**Mục tiêu kiểm tra**
-- Agent gọi `calculate_budget`.
-- Trả về bảng chi phí rõ ràng.
-- Tính đúng tổng chi và số tiền còn lại.
-
-**Output thực tế**
-```text
-TravelBuddy đang suy nghĩ...
-
-[Gọi tool: calculate_budget]({'total_budget': 5000000, 'expenses': 'vé_máy_bay:890000,khách_sạn:650000'})
-[Trả lời trực tiếp]
-
-TravelBuddy: Ngân sách của bạn được tính như sau:
-
-Bảng chi phí:
-- Vé máy bay: 890.000đ
-- Khách sạn: 650.000đ
----
-Tổng chi: 1.540.000đ
-Ngân sách: 5.000.000đ
-Còn lại: 3.460.000đ
-
-Bạn còn 3.460.000đ để chi tiêu cho các khoản khác trong chuyến đi. Nếu cần thêm thông tin gì, hãy cho mình biết nhé!
-```
-
-**Nhận xét**
-- Tính đúng và format dễ đọc.
-
----
-
-## Test 8 - Route Not Found / Reverse Data Check
-
-**Input**
-```text
-Tìm chuyến bay từ Đà Nẵng đi Hà Nội
-```
-
-**Mục tiêu kiểm tra**
-- Nếu không có dữ liệu đúng chiều, tool có thể báo không có dữ liệu chiều đó.
-- Nếu code của bạn hỗ trợ tra chiều ngược, agent cần diễn giải rõ.
-- Không được bịa dữ liệu.
-
-**Output thực tế**
-```text
-TravelBuddy đang suy nghĩ...
-
-[Gọi tool: search_flights]({'origin': 'Đà Nẵng', 'destination': 'Hà Nội'})
-[Trả lời trực tiếp]
-
-TravelBuddy: Hiện tại không có chuyến bay từ Đà Nẵng đi Hà Nội. Tuy nhiên, mình có thông tin về các chuyến bay từ Hà Nội đến Đà Nẵng như sau:
-
-1. **VietJet Air**: 08:30 - 09:50 | Phổ thông | 890.000đ
-2. **Bamboo Airways**: 11:00 - 12:20 | Phổ thông | 1.200.000đ
-3. **Vietnam Airlines**: 06:00 - 07:20 | Phổ thông | 1.450.000đ
-4. **Vietnam Airlines**: 14:00 - 15:20 | Thương gia | 2.800.000đ
-
-Nếu bạn cần thêm thông tin hoặc có kế hoạch khác, hãy cho mình biết nhé!
-```
-
-**Nhận xét**
-- Tool xử lý đúng trường hợp thiếu dữ liệu.
